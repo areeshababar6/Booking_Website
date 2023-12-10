@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.scroll-container {
+  height: 800px;
+  overflow: auto;
+}
+body {
+  font-family: roboto;
+  font-weight: bold;
+  background-color: #faf2e3;
+}
+.position {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+/* for whole body alignment*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 7px #e8bdae;
+}
+
+/* for topper bar code */
+#top-bar {
+  background-color: #3d311cf7;
+  margin: 0;
+}
+#top-bar nav {
+  text-align: right;
+}
+#top-bar nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-right: 2px solid #fff;
+}
+#top-bar nav a :last-child {
+  border-right: none;
+}
+/* topper bar code close */
+
+/* logo setting */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #74603a;
+  padding: 8px 0;
+  text-decoration: wavy;
+  color: #332916;
+}
+/* logo set.. close*/
+
+/* image slider*/
+.img-responsive {
+  max-width: 100%;
+  height: 100%;
+}
+/* close image slider*/
+.row {
+  display: block;
+}
+.col-3 {
+  display: inline-block;
+  width: 24%;
+  padding: 15px;
+}
+.col-4 {
+  display: inline-block;
+  /* float: left; */
+  width: 33%;
+  padding: 15px;
+}
+.center {
+  text-align: center;
+}
+
+/* editing main memu*/
+#main-menu {
+  background-color: #3d311cf7;
+}
+#main-menu nav {
+  text-align: center;
+}
+#main-menu nav a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  border-right: 2px solid #fff;
+}
+#main-menu nav a :last-child {
+  border-right: none;
+}
+/* closing main memu*/
+/* Services*/
+.services .service-wrapper {
+  background-color: #fff;
+}
+.services .service-wrapper .content {
+  padding: 5px;
+}
+.services p {
+  font-family: roboto;
+  font-weight: 300;
+}
+.service-wrapper .figure {
+  height :570px;
+  position: relative;
+}
+.service-wrapper .figure .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+.btn-right {
+  float: right;
+}
+.btn-info {
+  background-color: #3a4147;
+  color: aliceblue;
+}
+.btn-info:hover {
+  background-color: rgb(159, 155, 155);
+}
+.clearfix {
+  clear: both;
+}
+/* Closing Services*/
+
+/* Footer area*/
+#footer {
+  background-color: #212529;
+  padding-top: 50px;
+}
+.head{
+  color: #9b9d9e;
+}
+#footer h3 {
+  border-bottom: 2px solid #fff;
+}
+#footer ul {
+  margin-top: 20px;
+}
+#footer ul li {
+  background-color: #3a4147;
+  list-style-type: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+#footer ul li a {
+  text-decoration: none;
+  color: lemonchiffon;
+}
+#footer ul li:hover {
+  background-color: #b0aeae;
+}
+#footer ul li:hover a {
+  color: rgb(19, 18, 18);
+}
+.footer-bottom {
+  margin-top: 50px;
+  background-color: #121213;
+  padding: 5px 8px;
+}
+.footer-bottom p {
+  text-align: center;
+  color: #eae3e3;
+}
+/* Closing of footer*/
+
+#main-menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/*Sign up page start*/
+.main.content {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+.head {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 50px;
+}
+.form-control {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  background-color: #ced3d5;
+  font-size: large;
+}
+.signup .form-control {
+  border: 2px solid rgb(128, 123, 123);
+  padding: 10px 5px;
+  /* text-emphasis: none; */
+}
+.signup .form-group h3 {
+  padding: 5px 10px;
+}
+.signup {
+  padding: 10px 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+.form-group {
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+.submit-btn {
+  background-color: rgb(32, 81, 111);
+  font-style: calc(bold);
+}
+.submit-btn :hover {
+  background-color: #161414;
+  padding: 10px;
+}
+.chkbox {
+  padding: 10px 15px;
+}
+.existpage {
+  padding: 10px 10px;
+}
+#highlight {
+  color: rgb(32, 81, 111);
+  display: block;
+}
+#highlight:hover {
+  background-color: black;
+}
+select {
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(96, 92, 92);
+  align-items: center;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {
+  font-size: 50px;
+}
+/*Sign up page end*/
+/*Login page Start*/
+.login {
+  padding: 10px 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+.logclass {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  background-color: #ced3d5;
+  font-size: large;
+}
+.login .logclass {
+  border: 2px solid rgb(128, 123, 123);
+  padding: 10px 5px;
+  /* text-emphasis: none; */
+}
+.box {
+  padding: 10px 15px;
+}
+.logform {
+  padding: 10px 10px;
+}
+.logclass .center {
+  text-align: center;
+  background-color: rgba(123, 136, 22, 0.685);
+}
+.login .submit-icon {
+  background-color: rgba(123, 136, 22, 0.685);
+  font-style: calc(bold);
+}
+/*Login page end*/
+
+/*screen resolution*/
+/*media screen and (min-width: 900px) and (max-width: 1500px) {   /*769*/
+/*
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-12 p {
+    font-size: 10px;
+  }
+  #top-bar {
+    display: none;
+  }
+}
+*/
+
+
+.gfg {
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width:800px) {
+  body {
+      text-align: center;
+      background-color: green;
+  }
+
+  .gfg {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .geeks {
+      color: white;
+  }
+}
+
+@media screen and (max-width:700px) {
+  body {
+      text-align: center;
+      background-color: blue;
+  }
+}  .gfg {
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width:900px) {
+  body {
+      text-align: center;
+      background-color: green;
+  }
+
+  .gfg {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .geeks {
+      color: white;
+  }
+}
+
+@media screen and (max-width:500px) {
+  body {
+      text-align: center;
+      background-color: blue;
+  }
+}
+/*php code */
+.textarea-field{
+width:100% !important;
+
+}
+.table{
+	width:80%;
+	margin:50px auto;
+
+}
+table, tr,td{border:1px solid black;}
+.success{
+	background-color:rgb(18, 231, 18);
+	color:#fff;
+	text-align:center;
+
+}
+/*php end */
+
+/*about start */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 100px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/*about end */
